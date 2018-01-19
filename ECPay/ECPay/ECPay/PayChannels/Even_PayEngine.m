@@ -69,7 +69,7 @@
     Even_Charge* chargeObj = [context parsing:charge];
     _channel = chargeObj.channel;
     
-    //验证付款对象(支付对象)
+    //验证付款对象(支付对象) 
     if (![Even_PayErrorUtils invalidCharge:chargeObj withComplation:complation]) {
         return;
     }

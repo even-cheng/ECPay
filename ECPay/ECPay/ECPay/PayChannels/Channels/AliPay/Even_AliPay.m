@@ -7,13 +7,12 @@
 //
 
 #import "Even_AliPay.h"
-#import "WXApi.h"
 #import "ResString.h"
 #import "Even_PayErrorUtils.h"
 #import "Order.h"
 #import "AlipayHeader.h"
 
-@interface Even_AliPay ()<WXApiDelegate>
+@interface Even_AliPay ()
 
 @property (nonatomic) Even_PayComplation complation;
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8613F3AC2010D229004563F7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8613F3AB2010D229004563F7 /* UIView+Frame.m */; };
+		8613F3AE2010D791004563F7 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 8613F3AD2010D6C4004563F7 /* delete.png */; };
+		8613F3AF2010D791004563F7 /* keyboardDelete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8682107B20038FB500FBD431 /* keyboardDelete.jpg */; };
 		8682102020038F7000FBD431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8682101F20038F7000FBD431 /* AppDelegate.m */; };
 		8682102320038F7000FBD431 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8682102220038F7000FBD431 /* ViewController.m */; };
 		8682102620038F7000FBD431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8682102420038F7000FBD431 /* Main.storyboard */; };
@@ -80,6 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8613F3A92010CDD9004563F7 /* ECPayConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECPayConfig.h; sourceTree = "<group>"; };
+		8613F3AA2010D228004563F7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		8613F3AB2010D229004563F7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		8613F3AD2010D6C4004563F7 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		8682101B20038F7000FBD431 /* ECPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8682101E20038F7000FBD431 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8682101F20038F7000FBD431 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -367,11 +374,11 @@
 			isa = PBXGroup;
 			children = (
 				8682110520038FB900FBD431 /* Pay.h */,
+				8613F3A92010CDD9004563F7 /* ECPayConfig.h */,
 				8682110620038FB900FBD431 /* Even_PayManager.h */,
 				8682107D20038FB500FBD431 /* Even_PayManager.m */,
 				8682108A20038FB800FBD431 /* Resources */,
 				8682107E20038FB500FBD431 /* Http */,
-				868210FE20038FB800FBD431 /* IAPManager */,
 				8682105120038FB500FBD431 /* PayChannels */,
 				8682112F20039D3F00FBD431 /* Categrays */,
 			);
@@ -429,10 +436,10 @@
 		8682105C20038FB500FBD431 /* WalletPay */ = {
 			isa = PBXGroup;
 			children = (
-				8682105D20038FB500FBD431 /* Even_NumberKeyboard.h */,
-				8682105E20038FB500FBD431 /* Even_NumberKeyboard.m */,
 				8682105F20038FB500FBD431 /* Even_WalletPay.h */,
 				8682106020038FB500FBD431 /* Even_WalletPay.m */,
+				8682105D20038FB500FBD431 /* Even_NumberKeyboard.h */,
+				8682105E20038FB500FBD431 /* Even_NumberKeyboard.m */,
 				8682106120038FB500FBD431 /* keyboardDelete.png */,
 				8682106220038FB500FBD431 /* WalletPayPasswordView.h */,
 				8682106320038FB500FBD431 /* WalletPayPasswordView.m */,
@@ -494,6 +501,7 @@
 		8682107A20038FB500FBD431 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8613F3AD2010D6C4004563F7 /* delete.png */,
 				8682107B20038FB500FBD431 /* keyboardDelete.jpg */,
 				8682107C20038FB500FBD431 /* ResString.h */,
 			);
@@ -754,6 +762,8 @@
 		8682112F20039D3F00FBD431 /* Categrays */ = {
 			isa = PBXGroup;
 			children = (
+				8613F3AA2010D228004563F7 /* UIView+Frame.h */,
+				8613F3AB2010D229004563F7 /* UIView+Frame.m */,
 				8682113620039ECB00FBD431 /* CoverView.h */,
 				8682113720039ECB00FBD431 /* CoverView.m */,
 				8682113420039E7500FBD431 /* SandBoxHelper.h */,
@@ -767,6 +777,7 @@
 		86FF3550200646D50097902A /* InAppPay */ = {
 			isa = PBXGroup;
 			children = (
+				868210FE20038FB800FBD431 /* IAPManager */,
 				86FF35552006475C0097902A /* Even_InAppPay.h */,
 				86FF35562006475C0097902A /* Even_InAppPay.m */,
 			);
@@ -888,6 +899,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8613F3AE2010D791004563F7 /* delete.png in Resources */,
+				8613F3AF2010D791004563F7 /* keyboardDelete.jpg in Resources */,
 				8682111620039B7F00FBD431 /* AlipaySDK.bundle in Resources */,
 				8682102B20038F7000FBD431 /* LaunchScreen.storyboard in Resources */,
 				8682102820038F7000FBD431 /* Assets.xcassets in Resources */,
@@ -926,6 +939,7 @@
 				8682111F20039BC400FBD431 /* Even_PayEngine.m in Sources */,
 				8682112020039BC400FBD431 /* Even_AliPay.m in Sources */,
 				8682112120039BC400FBD431 /* Even_UnionPay.mm in Sources */,
+				8613F3AC2010D229004563F7 /* UIView+Frame.m in Sources */,
 				8682112220039BC400FBD431 /* Even_NumberKeyboard.m in Sources */,
 				8682112320039BC400FBD431 /* Even_WalletPay.m in Sources */,
 				8682112420039BC400FBD431 /* WalletPayPasswordView.m in Sources */,

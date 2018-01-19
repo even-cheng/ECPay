@@ -32,18 +32,18 @@
 
     //验证支付身份
     [HttpUtils postWithParams:paramsDic callback:^(NSString *result) {
-        
+
         NSData *jsonData = [result dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary* resultDic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
         NSString* msg = resultDic[@"msg"];
-        
+
         if ([msg isEqualToString:@"success"]) {
-            
+
             //支付
             [[Even_PayEngine sharedEngine] payWithCharge:result controller:controller scheme:@"Even_PaySDK" withComplation:completeBlock];
             
         } else {
-        
+
             completeBlock(nil,[Even_PayErrorUtils create:Even_PayErrorServerVerifyError]);
         }
     }];

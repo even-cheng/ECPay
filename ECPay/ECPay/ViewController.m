@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Pay.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [[Even_PayManager sharePayManager] payWithChannel:PayChannel_walletPay andAmount:100 andPayType:PayType_Wallet_In andPayId:@"12445" andDescription:@"测试支付" andController:self CompleteBlock:^(NSString *result, Even_PayError *error) {
+        
+        NSLog(@"%@",result);
+    
+    }];
 }
 
 

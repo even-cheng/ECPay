@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Even_IPay.h"
 
-@interface Even_InAppPay : NSObject
+@interface Even_InAppPay : NSObject<Even_IPay>
 
 @end

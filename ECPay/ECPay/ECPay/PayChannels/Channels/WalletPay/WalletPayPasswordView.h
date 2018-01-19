@@ -10,12 +10,12 @@
 #import "Even_Charge.h"
 #import "Even_PayComplation.h"
 
-typedef void(^GetPayPwdBlock)(NSString* pwd,BOOL isSettingFpass);
+typedef void(^GetPayPwdBlock)(NSString* pwd);
 @interface WalletPayPasswordView : UIView
 
 +(instancetype)sharedPayPasswordView;
 
 -(void)removeWalletView;
--(void)showPasswordViewWithFpassView:(BOOL)needShowFpassView isSettingFpass:(BOOL)isSetting andFee:(double)fee andWalletFee:(double)walletFee AndPayPwdBlock:(GetPayPwdBlock)getPayPwdBlock;
+-(void)showPasswordViewWithFee:(double)fee andPayPwdBlock:(GetPayPwdBlock)getPayPwdBlock;
 
 @end
